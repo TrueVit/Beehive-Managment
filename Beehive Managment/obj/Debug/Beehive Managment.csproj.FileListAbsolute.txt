@@ -1,0 +1,9 @@
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\bin\Debug\Beehive Managment.exe.config
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\bin\Debug\Beehive Managment.exe
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\bin\Debug\Beehive Managment.pdb
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive Managment.csprojResolveAssemblyReference.cache
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive_Managment.Form1.resources
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive_Managment.Properties.Resources.resources
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive Managment.csproj.GenerateResource.Cache
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive Managment.exe
+C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive Managment.pdb
