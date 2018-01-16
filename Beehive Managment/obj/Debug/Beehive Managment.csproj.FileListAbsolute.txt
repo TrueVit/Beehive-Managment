@@ -7,3 +7,13 @@ C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\De
 C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive Managment.csproj.GenerateResource.Cache
 C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive Managment.exe
 C:\Users\ulchenkovvg\Documents\GitHub\Beehive Managment\Beehive Managment\obj\Debug\Beehive Managment.pdb
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\bin\Debug\Beehive Managment.exe.config
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\bin\Debug\Beehive Managment.exe
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\bin\Debug\Beehive Managment.pdb
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\obj\Debug\Beehive Managment.csprojResolveAssemblyReference.cache
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\obj\Debug\Beehive_Managment.Form1.resources
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\obj\Debug\Beehive_Managment.Properties.Resources.resources
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\obj\Debug\Beehive Managment.csproj.GenerateResource.Cache
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\obj\Debug\Beehive Managment.csproj.CoreCompileInputs.cache
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\obj\Debug\Beehive Managment.exe
+D:\Dropbox\Programs\C#\Beehive-Managment\Beehive Managment\obj\Debug\Beehive Managment.pdb
