@@ -8,25 +8,49 @@ namespace Beehive_Managment
 {
     class Worker
     {
-        string[] JobsICanDo;
+        string[] jobsICanDo;
         int shiftsToWork;
         int shiftsWorked;
+        string currentJob="";
 
-        public string CurrentJob;
-        public int ShiftsLeft;
+        public string CurrentJob
+        {
+            get { return currentJob; }
+        }
+        public int ShiftsLeft
+        {
+            get { return shiftsToWork - shiftsWorked; }
+        }
 
         public Worker(string[] jobsICanDo)
         {
-            JobsICanDo = jobsICanDo;
+            this.jobsICanDo = jobsICanDo;
+            //currentJob = "";
         }
 
-        public bool DoThisJob(string job, int shifts)
+        public bool DoThisJob(string job, int numberOfShifts)
         {
-            return true;
+            if (CurrentJob != "")
+                return false;
+            foreach(string _job in jobsICanDo)
+            {
+                if (_job == job)
+                {
+                    currentJob = job;
+                    shiftsToWork = numberOfShifts;
+                    shiftsWorked = 0;
+                    break;
+                }
+            }
+            return (CurrentJob != "");
         }
 
         public bool DidYouFinish()
         {
+            shiftsWorked++;
+            if (shiftsWorked < shiftsToWork)
+                return false;
+            currentJob = "";
             return true;
         }
     }
