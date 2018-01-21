@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Beehive_Managment
 {
-    class Worker
+    class Worker:Bee
     {
         string[] jobsICanDo;
         int shiftsToWork;
@@ -22,7 +22,7 @@ namespace Beehive_Managment
             get { return shiftsToWork - shiftsWorked; }
         }
 
-        public Worker(string[] jobsICanDo)
+        public Worker(string[] jobsICanDo, double weightMg):base(weightMg)
         {
             this.jobsICanDo = jobsICanDo;
             //currentJob = "";
@@ -48,10 +48,21 @@ namespace Beehive_Managment
         public bool DidYouFinish()
         {
             shiftsWorked++;
-            if (shiftsWorked < shiftsToWork)
+            if (shiftsWorked <= shiftsToWork)
                 return false;
             currentJob = "";
+            shiftsToWork = 0;
+            shiftsWorked = 0;
             return true;
+        }
+
+        const double honeyUnitsPerShiftWorked = .65;
+
+        public override double HoneyConsumptionRate()
+        {
+            double consumptionRate=base.HoneyConsumptionRate();
+            consumptionRate += shiftsWorked * honeyUnitsPerShiftWorked;
+            return consumptionRate;
         }
     }
 }

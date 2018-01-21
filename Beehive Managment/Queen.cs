@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Beehive_Managment
 {
-    class Queen
+    class Queen:Bee
     {
         Worker[] Workers = new Worker[4];
         int shiftNumber=0;
 
-        public Queen(Worker[] workers)
+        public Queen(Worker[] workers, double wightMg):base(wightMg)
         {
             Workers = workers;
         }
@@ -30,13 +30,16 @@ namespace Beehive_Managment
 
         public string WorkTheNextShift()
         {
+            double honeyConsumed = HoneyConsumptionRate();
+
             shiftNumber++;
             string report = "\r\nReport for shift #" + shiftNumber + "\r\n";
             var n = 0;
             foreach (Worker worker in Workers)
             {
                 n++;
-                if (worker.CurrentJob == "")
+                
+                if (String.IsNullOrEmpty(worker.CurrentJob))
                 {
                     report += "Worker #" + n + " is not work.\r\n";
                 }
@@ -48,16 +51,18 @@ namespace Beehive_Managment
                     }
                     else
                     {
-                        if (worker.ShiftsLeft == 1)
+                        if (worker.ShiftsLeft == 0)
                             report += "Worker #" + n + " will be done '" + 
-                                worker.CurrentJob + "'after this shift.\r\n";
+                                worker.CurrentJob + "' after this shift.\r\n";
                         else
                             report += "Worker #" + n + " is doing '" +
                                 worker.CurrentJob + "' for " + worker.ShiftsLeft +
                                 " more shifts.\r\n";
                     }
                 }
+                honeyConsumed += worker.HoneyConsumptionRate();
             }
+            report += "Total honey consumed for the shift: " + honeyConsumed + " units\r\n";
             return report;
         }
     }

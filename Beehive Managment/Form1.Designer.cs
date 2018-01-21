@@ -118,8 +118,9 @@
             this.reportTextbox.Location = new System.Drawing.Point(12, 142);
             this.reportTextbox.Multiline = true;
             this.reportTextbox.Name = "reportTextbox";
+            this.reportTextbox.ReadOnly = true;
             this.reportTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.reportTextbox.Size = new System.Drawing.Size(385, 199);
+            this.reportTextbox.Size = new System.Drawing.Size(385, 696);
             this.reportTextbox.TabIndex = 1;
             // 
             // nextShift
@@ -137,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 353);
+            this.ClientSize = new System.Drawing.Size(409, 850);
             this.Controls.Add(this.nextShift);
             this.Controls.Add(this.reportTextbox);
             this.Controls.Add(this.groupBox1);
